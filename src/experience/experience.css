@@ -1,0 +1,90 @@
+.containerExperience {
+    display: flex;
+    flex-direction: column;
+}
+
+.headExp {
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Deux colonnes égales */
+    gap: 20px;
+    /* Espace entre les colonnes */
+}
+
+.containerExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+}
+
+.headExp {
+    margin-bottom: 20px;
+    /* Espace entre le titre et le reste du contenu */
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* Deux colonnes */
+    gap: 20px;
+    /* Espace entre les colonnes */
+}
+
+.icons {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    /* Quatre colonnes */
+    gap: 30px;
+    justify-items: center;
+    /* width: 80%; */
+    align-items: center;
+    /* Espace entre les icônes */
+}
+
+.iconSkills {
+    width: auto;
+    height: 80px;
+    filter: grayscale(98%);
+    transition: filter 0.3s ease;
+}
+
+.worked {
+    width: auto;
+    height: 150px;
+}
+
+/* Ajouter de la couleur lorsqu'une icône est survolée */
+.iconSkills:hover {
+    filter: none;
+    /* Retour à la couleur originale */
+    transition: filter 0.3s ease;
+    /* Animation de transition */
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+        /* Une seule colonne sur les écrans plus petits */
+    }
+
+    .icons {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.techno {
+    /* background-color: aqua; */
+    /* width: 50%; */
+}
+
+.entreprise {
+    /* background-color: rgb(238, 44, 44); */
+}
