@@ -1,3 +1,4 @@
+import About from './about/About';
 import './App.css';
 import Banner from './banner/Banner';
 import Content from './content/Content';
@@ -12,11 +13,11 @@ function App() {
       {/* <Banner></Banner> */}
 
 
-
+      <About></About>
       {/* <Content></Content>  */}
 
-      <Experience></Experience>
-      <Footer></Footer>
+      {/* <Experience></Experience> */}
+      {/* <Footer></Footer> */}
     </div>
   );
 }

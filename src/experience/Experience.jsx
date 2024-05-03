@@ -4,8 +4,8 @@ export default function Experience() {
     return (
         <div className="containerExperience">
             <div className="headExp">
-                <h3>Experience</h3>
-                <p>I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast-paced industry.</p>
+                <h3 className='title'>Experience</h3>
+                <p className='descAbout'>I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast-paced industry.</p>
             </div>
             <div className="content">
                 <div className="techno">
