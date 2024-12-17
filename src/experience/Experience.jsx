@@ -8,7 +8,7 @@ export default function Experience() {
                     <h3 className='title'>Experience</h3>
                     <p className='descAbout'>I've been doing web development for about 3 years now, and I'm always eager to learn more in this fast-paced industry.</p>
                 </div>
-                <div className="content">
+                <div className="contents">
                     <div className="techno">
                         <h4>SOME TECHNOLOGIES I'VE WORKED WITH:</h4>
                         <div className='icons'>
@@ -34,14 +34,16 @@ export default function Experience() {
 
                         </div>
                     </div>
-
+<hr />
                     <div className="entreprise">
                         <h4>WHERE I'VE WORKED:</h4>
-                        <div className=''>
+                        
+                        <br />
+                        <div className='containerWorked'>
+                            <img className='worked' src="/logo/meah.png" alt="Mautourco" />
                             <img className='worked' src="/logo/BICI.png" alt="BICI" />
-                            <br></br>
                             <img className='worked' src="/logo/proximity.png" alt="Proximity" />
-
+                            <img className='worked' src="/logo/mautourco.png" alt="Mautourco" />
                         </div>
                     </div>
                 </div>

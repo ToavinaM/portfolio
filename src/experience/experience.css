@@ -54,10 +54,15 @@
     filter: grayscale(98%);
     transition: filter 0.3s ease;
 }
-
+.containerWorked{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
 .worked {
-    width: auto;
-    height: 150px;
+    width: 19%;
 }
 
 /* Ajouter de la couleur lorsqu'une icône est survolée */
