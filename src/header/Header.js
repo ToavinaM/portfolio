@@ -13,7 +13,7 @@ const Header = () => {
             setHeaderHeight(newHeight);
 
             if (scrollTop > 0) {
-                setHeaderBackground('#333333'); // Changer la couleur à noir lors du défilement
+                setHeaderBackground('rgb(25 54 86)'); // Changer la couleur à noir lors du défilement
             } else {
                 setHeaderBackground(''); // Enlever la couleur en haut de la page
             }
