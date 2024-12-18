@@ -5,9 +5,12 @@
 
 .headExp {
     margin-bottom: 20px;
-    width: 70%;
+    width: 80%;
 }
-
+.trait{
+    border: solid 1px grey;
+    margin: 66px;
+}
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -58,12 +61,13 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    gap: 10px;
     align-items: center;
     justify-content: space-between;
 }
 .worked {
-    width: 19%;
-}
+    width: 14%;
+} 
 
 /* Ajouter de la couleur lorsqu'une icône est survolée */
 .iconSkills:hover {
@@ -81,7 +85,6 @@
 
     .icons {
         display: grid;
-
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -92,5 +95,5 @@
 }
 
 .entreprise {
-    /* background-color: rgb(238, 44, 44); */
+    margin-block: 40px;
 }

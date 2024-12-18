@@ -1,17 +1,29 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Déplacement léger vers le bas */
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    /* Assurez-vous que le body prend 100% de l'écran */
-    margin: 0;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* Position finale */
+    }
 }
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+        /* Commence à droite de l'écran */
+    }
 
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        /* Position finale */
+    }
+}
 .banner {
     position: relative;
     width: 100%;
@@ -19,7 +31,7 @@ body {
     /* Hauteur égale à celle de l'écran */
     display: flex;
     overflow: hidden;
-        background-color: #632238;
+    background-color: #632238;
 }
 
 .banner-left,
@@ -39,6 +51,7 @@ body {
     background: linear-gradient(170deg, #5b9490, #051a45);
     position: relative;
     clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 .banner-right {
     background: url('/public/images/profil.png') no-repeat center center;
@@ -53,6 +66,7 @@ body {
 .banner-right button {
     position: relative;
     z-index: 2;
+    top: 207px;
 }
 
 button {
@@ -67,6 +81,7 @@ button {
 }
 
 button:hover {
-    background: #00b894;
+    background: linear-gradient(170deg, #59d234, #286342);
     color: #fff;
+    transition: background 0.3s, color 0.3s;
 }

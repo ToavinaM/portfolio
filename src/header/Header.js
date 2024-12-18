@@ -38,7 +38,7 @@ const Header = () => {
         >
             <div className="header-left">
                 {/* <img src="path/to/your/logo.png" alt="Logo" className="logo" /> */}
-                <span className="header-item">Ranarilala Toavina</span>
+                <span className="header-item"> <img className='flag' src="/logo/fr.png" alt="Mautourco" /> </span>
             </div>
             <div className="header-right">
                 <span className="header-item" onClick={() => { scrollToSection('about') }}>About</span>

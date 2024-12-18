@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.fontTitle {
+  font-family: "Nunito", sans-serif;
+  opacity: 0;
+  animation: slideFromRight 1s ease-out forwards;
+  /* Durée et type de courbe */
+  animation-delay: 0.5s;
+  /* Délai avant l'animation */
+}

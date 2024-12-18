@@ -1,0 +1,78 @@
+/* Style général pour le bouton */
+.contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #00b894;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.contact-btn:hover {
+    background-color: #00a77d;
+    transform: translateY(-5px);
+}
+
+.contact-btn:active {
+    transform: translateY(2px);
+}
+
+/* Popup - caché au départ */
+.popup {
+    position: fixed;
+    bottom: 80px;
+    /* Au-dessus du bouton */
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Contenu du popup */
+.popup-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    margin-bottom: 15px;
+}
+
+/* Bouton de fermeture du popup */
+.close-popup {
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.close-popup:hover {
+    background-color: #c0392b;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

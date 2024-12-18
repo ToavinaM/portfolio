@@ -1,20 +1,69 @@
 #about {
-    background-color: rgb(240, 240, 240);
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+    overflow: hidden;
+    /* Pour s'assurer que les formes ne débordent pas */
 }
 
 .containerText {
-    margin: auto;
-    width: 50%;
-    /* background-color: aqua; */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #ffffff; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
-    /* font-family: 'Courier New', Courier, monospace; */
-    letter-spacing: 2px;
+    text-align-last: left;
+    font-size: 36px;
+    font-weight: bold;
+    color: #5f041f;
+    margin-bottom: 20px;
 }
 
 .descAbout {
-    line-height: 1.7;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.descAbout br {
+    margin-bottom: 10px;
+}
+
+/* Décorations géométriques */
+#about::before,
+#about::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+#about::before {
+    top: 23px;
+    left: 95%;
+    width: 100px;
+    height: 100px;
+        background-color: rgba(5, 26, 69, 0.15);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+#about::after {
+    top: 136px;
+    right: 92%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(95, 4, 31, 0.15);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    transform: translateX(50%) rotate(45deg);
 }
