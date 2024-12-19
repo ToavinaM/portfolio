@@ -54,7 +54,7 @@
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 .banner-right {
-    background: url('/public/images/profil.png') no-repeat center center;
+    /* background: url('/public/images/profil.png') no-repeat center center; */
     background-size: cover;
     text-align: center;
     position: relative;

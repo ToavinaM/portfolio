@@ -6,6 +6,7 @@ import Contact from './contact/Contact';
 import Experience from './experience/Experience';
 import Footer from './footer/Footer';
 import Header from './header/Header';
+import Service from './service/Service';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* <Contact></Contact> */}
       <Chatbot></Chatbot>
       <About></About>
+      <Service></Service>
       <Experience></Experience>
       <Footer></Footer>
     </div>

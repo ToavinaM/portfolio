@@ -5,6 +5,8 @@ const Banner = () => {
     return (
         <div className="banner">
             <div className="banner-left">
+                <h4 className="fontTitle">Bonjour ! 👋, Je me nomme </h4>
+                <p className="fontTitle"></p>
                 <h1 className="fontTitle">Ranarilala Toavina Mario</h1>
                 <h1 className="fontTitle">Votre IT Consultant</h1>
                 <p>Transformez vos idées en solutions technologiques.</p>
