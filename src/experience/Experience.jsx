@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./experience.css";
+import Entreprise from "./Entreprise/Entreprise";
 
 export default function Experience() {
     const [isVisible, setIsVisible] = useState(false);
@@ -19,18 +20,14 @@ export default function Experience() {
         { src: "/logo/bootstrap.png", alt: "Bootstrap" },
         { src: "/logo/github.png", alt: "GitHub" },
         { src: "/logo/linux.png", alt: "Linux" },
-        { src: "/logo/node.png", alt: "Node.js" },
+        { src: "/logo/docker.png", alt: "Linux" },
+        { src: "/logo/python.png", alt: "python" },
+        { src: "/logo/anaconda.png", alt: "anaconda" },
         { src: "/logo/photoshop.png", alt: "Photoshop" },
         { src: "/logo/ant.png", alt: "Ant Design" },
         { src: "/logo/figma.png", alt: "Figma" },
     ];
-    const companies = [
-        { src: "/logo/meah.png", alt: "Meah" },
-        { src: "/logo/BICI.png", alt: "BICI" },
-        { src: "/logo/spat.png", alt: "SPAT" },
-        { src: "/logo/mautourco.png", alt: "Mautourco" },
-        { src: "/logo/proximity.png", alt: "Proximity" },
-    ];
+
     useEffect(() => {
         const handleScroll = () => {
             const section = document.getElementById("experience");
@@ -55,13 +52,13 @@ export default function Experience() {
                 </div>
                 <div className="contents">
                     <div className="techno">
-                        <h4 className="techno-title">QUELLES TECHNOLOGIES J'AI UTILISÉES :</h4>
+                        <h4 className="techno-title">Mes technologies récentes :</h4>
                         <div className="icons">
                             {technologies.map((tech, index) => (
                                 <img
                                     key={index}
                                     className={`iconSkills ${isVisible ? "animate" : ""}`}
-                                    style={{ animationDelay: `${index * 0.2}s` }}
+                                    style={{ animationDelay: `${index * 0.15}s` }}
                                     src={tech.src}
                                     alt={tech.alt}
                                 />
@@ -69,19 +66,9 @@ export default function Experience() {
                         </div>
                     </div>
                     <hr className="trait" />
-                    <div className="entreprise">
-                        <h4 className="entreprise-title">OÙ J'AI TRAVAILLÉ :</h4>
-                        <div className="containerWorked">
-                            {companies.map((company, index) => (
-                                <img
-                                    key={index}
-                                    className="worked"
-                                    src={company.src}
-                                    alt={company.alt}
-                                />
-                            ))}
-                        </div>
-                    </div>
+                  
+                    <Entreprise></Entreprise>
+
                 </div>
             </div>
         </div>

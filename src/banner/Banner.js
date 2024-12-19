@@ -5,11 +5,10 @@ const Banner = () => {
     return (
         <div className="banner">
             <div className="banner-left">
-                <h4 className="fontTitle">Bonjour ! 👋, Je me nomme </h4>
-                <p className="fontTitle"></p>
-                <h1 className="fontTitle">Ranarilala Toavina Mario</h1>
-                <h1 className="fontTitle">Votre IT Consultant</h1>
-                <p>Transformez vos idées en solutions technologiques.</p>
+                <h1 className="fontTitle stroke">Bonjour !</h1>
+                <h2 className="fontTitle">Je m'appelle</h2>
+                <h2 className="fontTitle">Ranarilala Toavina Mario</h2>
+                <h3 className="fontTitle"> " Ensemble, donnons vie à vos projets avec des solutions innovantes "</h3>
             </div>
             {/* <div className="banner-right" style={{ backgroundImage: `url(${profilImage})`, backgroundSize: 'cover', backgroundPosition: 'center', }} > */}
             <div className="banner-right">

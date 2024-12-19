@@ -25,20 +25,23 @@
     height: 80px;
     filter: grayscale(98%);
     opacity: 0;
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+    /* Ajout de la transition pour l'opacité */
 }
-
 .iconSkills.animate {
     animation: appear 1s ease-in-out forwards;
+}
+.iconSkills:hover {
+    filter: none;
+    /* Retirer le filtre gris lors du hover */
+    opacity: 1;
+    /* Rendre l'élément visible lors du hover */
 }
 .techno {
     /* background-color: aqua; */
     /* width: 50%; */
 }
 
-.entreprise {
-    margin-block: 40px;
-}
 @keyframes appear {
     0% {
         filter: grayscale(98%);
